@@ -34,7 +34,7 @@ class _UserPanelState extends State<UserPanel> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                backgroundColor: Color.fromRGBO(217, 249, 192, 0.8),
+                backgroundColor:  Color.fromRGBO(217, 249, 192, 0.8),
                 radius: 50,
                 ),
               ],
@@ -54,7 +54,7 @@ class _UserPanelState extends State<UserPanel> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('класс', style: TextStyle(
+                const Text('класс', style: TextStyle(
                     fontSize: 17,
                     color: Colors.black,
                     fontFamily: 'WorkSans'
@@ -78,8 +78,8 @@ class _UserPanelState extends State<UserPanel> {
                   onPressed: () {},
                   child: Text('Расписание'),
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromRGBO(119, 101, 225, 1.0),
-                    minimumSize: Size(332, 234),
+                    primary: const Color.fromRGBO(119, 101, 225, 1.0),
+                    minimumSize: const Size(332, 234),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0)
                     ),
@@ -94,22 +94,22 @@ class _UserPanelState extends State<UserPanel> {
                 // Padding(padding: EdgeInsets.only(left: 25)),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('Еда'),
+                  child: const Text('Еда'),
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromRGBO(250, 195, 195, 1.0),
-                      minimumSize: Size(161, 156),
+                      primary: const Color.fromRGBO(250, 195, 195, 1.0),
+                      minimumSize: const Size(161, 156),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15.0)
                       )
                   ),
                 ),
-                Padding(padding: EdgeInsets.only(left: 15)),
+                const Padding(padding: EdgeInsets.only(left: 15)),
                 ElevatedButton(
                   onPressed: () {},
                   child: Text('Оценки за\n сегодня'),
                   style: ElevatedButton.styleFrom(
-                      primary: Color.fromRGBO(89, 244, 170, 0.63),
-                      minimumSize: Size(156, 156),
+                      primary: const Color.fromRGBO(89, 244, 170, 0.63),
+                      minimumSize: const Size(156, 156),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15.0)
                       )
