@@ -34,7 +34,7 @@ class _UserPanelState extends State<UserPanel> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                backgroundColor: Colors.lightGreen,
+                backgroundColor: Color.fromRGBO(217, 249, 192, 0.8),
                 radius: 50,
                 ),
               ],
@@ -43,30 +43,30 @@ class _UserPanelState extends State<UserPanel> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Имя Фалимия', style: TextStyle(
+                Text('Имя Фамилия', style: TextStyle(
                     fontSize: 25,
                     color: Colors.black,
-                    fontWeight: FontWeight.bold
+                    fontFamily: 'WorkSans'
                 ),),
               ],
             ),
-            Padding(padding: EdgeInsets.only(top: 10)),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text('класс', style: TextStyle(
                     fontSize: 17,
                     color: Colors.black,
-                  fontWeight: FontWeight.bold
+                    fontFamily: 'WorkSans'
                 ),)
               ],
             ),
-            Padding(padding: EdgeInsets.only(top: 16)),
+            Padding(padding: EdgeInsets.only(top: 13)),
             const Divider(
               height: 20,
-              thickness: 1,
-              indent: 41,
-              endIndent: 41,
+              thickness: 1.5,
+              indent: 25,
+              endIndent: 25,
               color: Color.fromRGBO(119, 101, 225, 1),
             ),
             Padding(padding: EdgeInsets.only(top: 25)),
@@ -76,7 +76,7 @@ class _UserPanelState extends State<UserPanel> {
                 // Padding(padding: EdgeInsets.fromLTRB(46,0,0,14)),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text(''),
+                  child: Text('Расписание'),
                   style: ElevatedButton.styleFrom(
                     primary: Color.fromRGBO(119, 101, 225, 1.0),
                     minimumSize: Size(332, 234),
@@ -94,7 +94,7 @@ class _UserPanelState extends State<UserPanel> {
                 // Padding(padding: EdgeInsets.only(left: 25)),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text(''),
+                  child: Text('Еда'),
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromRGBO(250, 195, 195, 1.0),
                       minimumSize: Size(161, 156),
@@ -106,7 +106,7 @@ class _UserPanelState extends State<UserPanel> {
                 Padding(padding: EdgeInsets.only(left: 15)),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text(''),
+                  child: Text('Оценки за\n сегодня'),
                   style: ElevatedButton.styleFrom(
                       primary: Color.fromRGBO(89, 244, 170, 0.63),
                       minimumSize: Size(156, 156),
@@ -123,28 +123,28 @@ class _UserPanelState extends State<UserPanel> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.book),
-                  iconSize: 30,
+                  icon: const Icon(Icons.school_rounded),
+                  iconSize: 33,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.book),
-                  iconSize: 30,
+                  icon: const Icon(Icons.menu_book_rounded),
+                  iconSize: 33,
                 ),
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.account_circle_rounded),
-                  iconSize: 30,
+                  iconSize: 33,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.restaurant_rounded),
-                  iconSize: 30,
+                  icon: const Icon(Icons.local_dining),
+                  iconSize: 33,
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.restaurant_rounded),
-                  iconSize: 30,
+                  icon: const Icon(Icons.speaker_notes_rounded),
+                  iconSize: 33,
                 ),
               ],
             ),
